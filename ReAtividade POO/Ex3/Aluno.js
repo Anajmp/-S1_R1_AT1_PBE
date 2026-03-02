@@ -20,7 +20,7 @@ class Aluno{
     }
 
     setNotaFinal(valor){
-        if (valor > 0 && valor < 10){
+        if (valor >= 0 && valor <= 10){
             this.notaFinal = valor;
         } else {
             return "Nota deve ser de 0 a 10"
